@@ -1,0 +1,15 @@
+namespace: felixfontein
+name: py2736compattest
+version: 0.0.1
+readme: README.md
+authors:
+  - Felix Fontein (https://github.com/felixfontein)
+description: null
+license_file: COPYING
+tags: [felixfontein]
+dependencies: {}
+repository: https://github.com/felixfontein/ansible-py2736compattest
+homepage: https://github.com/felixfontein/ansible-py2736compattest
+issues: https://github.com/felixfontein/ansible-py2736compattest/issues
+build_ignore:
+  - 'felixfontein-py2736compattest-*.tar.gz'

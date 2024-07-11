@@ -1,0 +1,18 @@
+plugins/modules/apt.py validate-modules:parameter-invalid
+plugins/modules/apt_repository.py validate-modules:parameter-invalid
+plugins/modules/dnf.py validate-modules:parameter-invalid
+plugins/modules/dnf5.py validate-modules:parameter-invalid
+plugins/module_utils/basic.py no-get-exception  # only referenced in deprecation code
+plugins/module_utils/basic.py pylint:unused-import  # deferring resolution to allow enabling the rule now
+plugins/module_utils/compat/selinux.py import-3.8!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py import-3.9!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py import-3.10!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py import-3.11!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py import-3.12!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py import-3.13!skip # pass/fail depends on presence of libselinux.so
+plugins/module_utils/compat/selinux.py pylint:unidiomatic-typecheck
+plugins/module_utils/distro/_distro.py no-assert
+plugins/module_utils/distro/__init__.py empty-init # breaks namespacing, bundled, do not override
+plugins/module_utils/facts/__init__.py empty-init # breaks namespacing, deprecate and eventually remove
+plugins/module_utils/pycompat24.py no-get-exception
+plugins/module_utils/urls.py replace-urlopen
