@@ -17,7 +17,7 @@ import time
 import glob
 from abc import ABCMeta, abstractmethod
 
-from ansible.module_utils.six import with_metaclass
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import with_metaclass
 
 yumdnf_argument_spec = dict(
     argument_spec=dict(

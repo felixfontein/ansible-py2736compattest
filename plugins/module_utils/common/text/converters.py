@@ -10,8 +10,8 @@ import codecs
 import datetime
 import json
 
-from ansible.module_utils.six.moves.collections_abc import Set
-from ansible.module_utils.six import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.collections_abc import Set
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import (
     PY3,
     binary_type,
     iteritems,

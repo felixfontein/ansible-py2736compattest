@@ -38,7 +38,7 @@ import shlex
 import subprocess
 import traceback
 
-from ansible.module_utils.six import PY2, b
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import PY2, b
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_bytes, to_text
 
 

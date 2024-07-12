@@ -20,7 +20,7 @@ import os
 import re
 import time
 
-from ansible.module_utils.six.moves import reduce
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import reduce
 
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.hardware.base import Hardware, HardwareCollector
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.timeout import TimeoutError, timeout

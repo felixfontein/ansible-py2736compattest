@@ -11,6 +11,6 @@ __metaclass__ = type
 # pylint: disable=unused-import
 import codecs
 
-from ansible.module_utils.six import PY3, text_type, binary_type
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import PY3, text_type, binary_type
 
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_bytes, to_native, to_text

@@ -7,7 +7,7 @@ __metaclass__ = type
 
 import re
 
-from ansible.module_utils.six import iteritems
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import iteritems
 
 SIZE_RANGES = {
     'Y': 1 << 80,

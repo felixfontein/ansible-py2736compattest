@@ -32,7 +32,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.erro
 )
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.parsing.convert_bool import BOOLEANS_FALSE, BOOLEANS_TRUE
 
-from ansible.module_utils.six.moves.collections_abc import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.collections_abc import (
     KeysView,
     Set,
     Sequence,
@@ -42,7 +42,7 @@ from ansible.module_utils.six.moves.collections_abc import (
     MutableSequence,
 )
 
-from ansible.module_utils.six import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import (
     binary_type,
     integer_types,
     string_types,

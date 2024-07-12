@@ -10,7 +10,7 @@ import re
 from struct import pack
 from socket import inet_ntoa
 
-from ansible.module_utils.six.moves import zip
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import zip
 
 
 VALID_MASKS = [2**8 - 2**i for i in range(0, 9)]

@@ -81,12 +81,12 @@ except ImportError:
     import http.client as httplib  # type: ignore[no-redef]
 
 import ansible_collections.felixfontein.py2736compattest.plugins.module_utils.compat.typing as t
-import ansible.module_utils.six.moves.http_cookiejar as cookiejar
-import ansible.module_utils.six.moves.urllib.error as urllib_error
+import ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.http_cookiejar as cookiejar
+import ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.urllib.error as urllib_error
 
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.collections import Mapping, is_sequence
-from ansible.module_utils.six import PY2, PY3, string_types
-from ansible.module_utils.six.moves import cStringIO
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import PY2, PY3, string_types
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import cStringIO
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.basic import get_distribution, missing_required_lib
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_bytes, to_native, to_text
 
@@ -102,7 +102,7 @@ except ImportError:
 urllib_request.HTTPRedirectHandler.http_error_308 = urllib_request.HTTPRedirectHandler.http_error_307  # type: ignore[attr-defined,assignment]
 
 try:
-    from ansible.module_utils.six.moves.urllib.parse import urlparse, urlunparse, unquote
+    from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.urllib.parse import urlparse, urlunparse, unquote
     HAS_URLPARSE = True
 except Exception:
     HAS_URLPARSE = False

@@ -4,7 +4,7 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 
-from ansible.module_utils.six import binary_type, text_type
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import binary_type, text_type
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_text
 
 

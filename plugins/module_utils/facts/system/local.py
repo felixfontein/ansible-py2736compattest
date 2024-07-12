@@ -26,8 +26,8 @@ import ansible_collections.felixfontein.py2736compattest.plugins.module_utils.co
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_text
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.utils import get_file_content
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.collector import BaseFactCollector
-from ansible.module_utils.six import PY3
-from ansible.module_utils.six.moves import configparser, StringIO
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import PY3
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import configparser, StringIO
 
 
 class LocalFactCollector(BaseFactCollector):

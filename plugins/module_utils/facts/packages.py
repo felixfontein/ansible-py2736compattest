@@ -6,7 +6,7 @@ __metaclass__ = type
 
 from abc import ABCMeta, abstractmethod
 
-from ansible.module_utils.six import with_metaclass
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import with_metaclass
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.process import get_bin_path
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common._utils import get_all_subclasses
 

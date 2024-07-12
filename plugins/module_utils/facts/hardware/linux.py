@@ -34,7 +34,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.comm
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.formatters import bytes_to_human
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.hardware.base import Hardware, HardwareCollector
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.utils import get_file_content, get_file_lines, get_mount_size
-from ansible.module_utils.six import iteritems
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import iteritems
 
 # import this as a module to ensure we get the same module instance
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts import timeout

@@ -40,8 +40,8 @@ import uuid
 from functools import partial
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_bytes, to_text
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.json import AnsibleJSONEncoder
-from ansible.module_utils.six import iteritems
-from ansible.module_utils.six.moves import cPickle
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import iteritems
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import cPickle
 
 
 def write_to_file_descriptor(fd, obj):

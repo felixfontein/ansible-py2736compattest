@@ -24,7 +24,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.comm
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.utils import get_file_content, get_mount_size
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.hardware.base import Hardware, HardwareCollector
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts import timeout
-from ansible.module_utils.six.moves import reduce
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import reduce
 
 
 class SunOSHardware(Hardware):

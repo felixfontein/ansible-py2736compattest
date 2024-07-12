@@ -357,7 +357,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.basi
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.locale import get_best_parsable_locale
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.respawn import has_respawned, probe_interpreters_for_module, respawn_module
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import to_native, to_text
-from ansible.module_utils.six import PY3, string_types
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import PY3, string_types
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.urls import fetch_file
 
 DPKG_OPTIONS = 'force-confdef,force-confold'

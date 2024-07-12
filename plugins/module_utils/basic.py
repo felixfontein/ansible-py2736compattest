@@ -134,7 +134,7 @@ except ImportError as e:
     print('\n{{"msg": "Error: ansible requires the stdlib json: {0}", "failed": true}}'.format(to_native(e)))
     sys.exit(1)
 
-from ansible.module_utils.six.moves.collections_abc import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves.collections_abc import (
     KeysView,
     Mapping, MutableMapping,
     Sequence, MutableSequence,
@@ -167,7 +167,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.comm
 )
 
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.errors import AnsibleFallbackNotFound, AnsibleValidationErrorMultiple, UnsupportedError
-from ansible.module_utils.six import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import (
     PY2,
     PY3,
     b,
@@ -177,7 +177,7 @@ from ansible.module_utils.six import (
     string_types,
     text_type,
 )
-from ansible.module_utils.six.moves import map, reduce, shlex_quote
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six.moves import map, reduce, shlex_quote
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.validation import (
     check_missing_parameters,
     safe_eval,
@@ -364,12 +364,15 @@ def _load_params():
     if _ANSIBLE_ARGS is None:
         try:
             # By default (if this isn't a respawn), ansible-core's basic module utils gets the
-            # arguments fed directly.
+            # arguments fed directly. We use it's _load_params() if that's available.
             from ansible.module_utils import basic as _basic
-            _ANSIBLE_ARGS = _basic._ANSIBLE_ARGS
-        except Exception:
+        except:
             # Can fail, for example if ansible-core 2.17's module utils is imported with Python 2.7 or 3.6
             pass
+        else:
+            result = _basic._load_params()
+            _ANSIBLE_ARGS = _basic._ANSIBLE_ARGS
+            return result
 
     if _ANSIBLE_ARGS is not None:
         buffer = _ANSIBLE_ARGS

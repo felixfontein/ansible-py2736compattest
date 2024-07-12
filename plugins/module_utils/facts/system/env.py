@@ -20,7 +20,7 @@ import os
 
 import ansible_collections.felixfontein.py2736compattest.plugins.module_utils.compat.typing as t
 
-from ansible.module_utils.six import iteritems
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import iteritems
 
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.facts.collector import BaseFactCollector
 

@@ -15,7 +15,7 @@ from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.comm
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.converters import jsonify
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.common.text.formatters import human_to_bytes
 from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.parsing.convert_bool import boolean
-from ansible.module_utils.six import (
+from ansible_collections.felixfontein.py2736compattest.plugins.module_utils.six import (
     binary_type,
     integer_types,
     string_types,
